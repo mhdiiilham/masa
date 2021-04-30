@@ -1,4 +1,4 @@
-# masa
+# masa ![GO](https://github.com/mhdiiilham/masa/actions/workflows/go.yml/badge.svg)
 
 *This package was inspired by* **[masa](https://github.com/armedi/masa)**
 
