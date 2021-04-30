@@ -13,8 +13,8 @@ go get github.com/mhdiiilham/masa
 package main
 
 import (
-    time.Time
-    github.com/mhdiiilham/masa
+    "time.Time"
+    "github.com/mhdiiilham/masa"
 )
 
 func main() {
