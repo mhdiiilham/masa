@@ -19,7 +19,7 @@ import (
 
 func main() {
     goTime, _ := time.Parse("2006-01-02", "2000-12-15")
-    hari := New(goTime).Convert(tc.arg).String()
+    hari := masa.New(goTime).Convert(tc.arg).String()
     fmt.Println(hari) // This will print: Jumat
 }
 ```
