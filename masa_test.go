@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestMasa_Masa(t *testing.T) {
+func TestMasa_Day(t *testing.T) {
 	testCases := []struct {
 		name string
 		arg  string
