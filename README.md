@@ -1,4 +1,4 @@
-# masa ![GO](https://github.com/mhdiiilham/masa/actions/workflows/go.yml/badge.svg) [![Go Report Card](https://goreportcard.com/badge/github.com/mhdiiilham/masa)]
+# masa ![GO](https://github.com/mhdiiilham/masa/actions/workflows/go.yml/badge.svg) ![Go Report Card](https://goreportcard.com/badge/github.com/mhdiiilham/masa)
 
 *This package was inspired by* **[masa](https://github.com/armedi/masa)**
 
