@@ -1,9 +1,7 @@
 package masa
 
 import (
-	"fmt"
 	"regexp"
-	"strings"
 	"time"
 )
 
@@ -30,8 +28,7 @@ func (w *Waktu) String() string {
 		format := string(pattern)
 		locale := w.locale(format)
 		re := regexp.MustCompile(`((dddd+|ddd+|dd+|DD+|D+|MMMM+|MMM+|MM+|M+|YYYY+|YY+))`)
-		words := fmt.Sprintf("%q", re.ReplaceAll([]byte(w.Format), []byte(locale)))
-		w.Format = strings.ReplaceAll(words, `"`, "")
+		w.Format = string(re.ReplaceAll([]byte(w.Format), []byte(locale)))
 	}
 	return w.Format
 }
