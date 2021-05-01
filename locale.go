@@ -1,6 +1,9 @@
 package masa
 
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 func fullDays(time time.Time) string {
 	weekdays := map[string]string{
@@ -39,4 +42,47 @@ func minDays(time time.Time) string {
 		"Sunda":     "Mn",
 	}
 	return weekdays[time.Weekday().String()]
+}
+
+func fullMonths(time time.Time) string {
+	weekdays := map[string]string{
+		"January":   "Januari",
+		"February":  "Februari",
+		"March":     "Maret",
+		"April":     "April",
+		"May":       "Mei",
+		"June":      "Juni",
+		"July":      "Juli",
+		"August":    "Agustus",
+		"September": "September",
+		"October":   "Oktober",
+		"November":  "November",
+		"December":  "Desember",
+	}
+	return weekdays[time.Month().String()]
+}
+
+func shortMonths(time time.Time) string {
+	weekdays := map[string]string{
+		"January":   "Jan",
+		"February":  "Feb",
+		"March":     "Mar",
+		"April":     "Apr",
+		"May":       "Mei",
+		"June":      "Jun",
+		"July":      "Jul",
+		"August":    "Ags",
+		"September": "Sep",
+		"October":   "Okt",
+		"November":  "Nov",
+		"December":  "Des",
+	}
+	return weekdays[time.Month().String()]
+}
+
+func twoDigitMonth(time time.Time) string {
+	return fmt.Sprintf("%02d", int(time.Month()))
+}
+func oneDigitMonth(time time.Time) string {
+	return fmt.Sprintf("%d", int(time.Month()))
 }

@@ -49,6 +49,14 @@ func (w *Waktu) locale(format string) string {
 		return shortDays(w.Time)
 	case "dd":
 		return minDays(w.Time)
+	case "MMMM":
+		return fullMonths(w.Time)
+	case "MMM":
+		return shortMonths(w.Time)
+	case "MM":
+		return twoDigitMonth(w.Time)
+	case "M":
+		return oneDigitMonth(w.Time)
 	default:
 		return ""
 	}

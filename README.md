@@ -21,6 +21,9 @@ func main() {
     goTime, _ := time.Parse("2006-01-02", "2000-12-15")
     hari := masa.New(goTime).Convert(tc.arg).String()
     fmt.Println(hari) // This will print: Jumat
+
+    dalamKalimat := masa.New(gotime).Convert("Kamaren pas bulan MMMM kan yak?")
+    fmt.Println(dalamKalimat) // This will print: Kamaren pas bulan Desember kan yak?
 }
 ```
 
@@ -30,3 +33,7 @@ func main() {
 |    Hari | dd    | Mg Sn Sl Rb Km Jm Sb                            |
 |         | ddd   | Min Sen Sel Rab Kam Jum Sab                     |
 |         | dddd  | Minggu Senin Selasa Rabu Kamis Jumat Sabtu      |
+|   Bulan | M     | 1 2 3 ... 11 12                                 |
+|         | MM    | 01 02 03 ... 11 12                              |
+|         | MMM   | Jan Feb Mar Apr Mei Jun Jul Agt Sep Okt Nov Des |
+|         | MMMM  | Januari Februari Maret ... November Desember    |
