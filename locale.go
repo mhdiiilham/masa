@@ -13,7 +13,7 @@ func fullDays(time time.Time) string {
 		"Thursday":  "Kamis",
 		"Friday":    "Jumat",
 		"Saturday":  "Sabtu",
-		"Sunda":     "Minggu",
+		"Sunday":    "Minggu",
 	}
 	return weekdays[time.Weekday().String()]
 }
